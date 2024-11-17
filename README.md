@@ -10,7 +10,7 @@
 [![twitter](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/twitter-32.png)](https://x.com/ahmd_alywsfy?t=loKo-gyyhIEtzrXN3EcfgA&s=09)
 [![facebook](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/facebook-32.png)](https://www.facebook.com/ahmed.ucv)
 [![whatsapp](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/whatsapp-32.png)](https://wa.me/c/967776108988)
-[![service](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/briefcase-32.png)](https://discuss.erpnext.com/u/mohamedabdulsalam/summary)
+[![service](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/briefcase-32.png)](https://discuss.erpnext.com/u/AhmedUCV/summary)
 
 <!-- [https://discuss.erpnext.com](https://discuss.erpnext.com/u/mohamedabdulsalam/summary) -->
 ![](https://komarev.com/ghpvc/?username=proAhmedUcv)
