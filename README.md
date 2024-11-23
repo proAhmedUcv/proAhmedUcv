@@ -20,6 +20,9 @@
  
 
 👨‍💻 About Me
+
+ <hr>
+ 
 I specialize in building and customizing enterprise solutions using ERPNext and the Frappe Framework, delivering seamless systems that drive digital transformation for businesses. As a graduate of Management Information Systems from Sana’a University, Faculty of Computer Science, I bring a strong academic foundation combined with practical expertise in creating scalable, efficient solutions for complex organizational challenges.
 
 ⚡ What I Offer:
