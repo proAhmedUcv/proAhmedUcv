@@ -28,6 +28,8 @@ Extensive experience in developing and tailoring ERPNext systems to align with d
 Advanced skills in crafting applications with the Frappe Framework, emphasizing performance, user experience, and maintainability.
 Expertise in designing integrated solutions that streamline organizational processes, reduce complexity, and boost operational efficiency.
 A passion for writing clean, well-structured, and future-proof code that adheres to industry best practices.
+ <hr>
+ 
 🌟 Why Choose Me?
 I believe in the power of precision and a customer-centric approach. My dedication lies in delivering innovative, flexible solutions that not only meet but exceed expectations. My academic and professional background equips me with a deep understanding of enterprise challenges and the ability to translate them into transformative opportunities through technology.
 
