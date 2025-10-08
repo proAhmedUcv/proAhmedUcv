@@ -6,40 +6,45 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
   <style>
-    :root {
-      --bg: #071029; --card: #0b1220; --muted: #9fb2d6; --accent: #36BCF7;
+    :root{
+      --bg:#071029; --card:#0b1220; --muted:#9fb2d6; --accent:#36BCF7;
     }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
-      background: linear-gradient(180deg, #06101b 0%, #071029 100%);
-      color: #E6EEF8;
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background:linear-gradient(180deg,#06101b 0%, #071029 100%);
+      color:#E6EEF8;
     }
-    header {
-      display: flex;
-      gap: 18px;
-      align-items: center;
-      padding: 28px;
-      max-width: 1100px;
-      margin: 0 auto;
+    header{
+      display:flex;gap:18px;align-items:center;
+      padding:28px;max-width:1100px;margin:0 auto;
     }
-    header img {
-      width: 96px; height: 96px; border-radius: 16px; object-fit: cover;
-      border: 2px solid rgba(255,255,255,0.04);
+    header img{
+      width:96px;height:96px;border-radius:16px;
+      object-fit:cover;border:2px solid rgba(255,255,255,0.04);
     }
-    .wrap { max-width: 1100px; margin: 20px auto; padding: 18px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
-    .card {
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      padding: 18px; border-radius: 12px;
-      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+    .wrap{max-width:1100px;margin:20px auto;padding:18px}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:16px;
     }
-    h3 { margin: 0 0 12px 0; color: var(--accent); }
-    ul.repo { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
-    ul.repo li a { color: #CFE8FF; text-decoration: none; }
-    footer { max-width: 1100px; margin: 18px auto; color: var(--muted); font-size: 13px; text-align: center; }
-    @media (max-width: 520px) { header { flex-direction: column; align-items: flex-start; } }
+    .card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding:18px;border-radius:12px;
+      box-shadow:0 6px 30px rgba(2,6,23,0.6);
+    }
+    h3{margin:0 0 12px 0;color:var(--accent)}
+    ul.repo{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+    ul.repo li a{color:#CFE8FF;text-decoration:none}
+    footer{
+      max-width:1100px;margin:18px auto;color:var(--muted);
+      font-size:13px;text-align:center;
+    }
+    @media (max-width:520px){
+      header{flex-direction:column;align-items:flex-start}
+    }
   </style>
 </head>
 <body>
@@ -48,14 +53,18 @@
     <div>
       <h1 id="name">Loading...</h1>
       <div id="bio" style="color:var(--muted)"></div>
-      <div style="margin-top:8px"><a id="profileLink" href="#" target="_blank" style="color:var(--accent)">Open GitHub Profile</a></div>
+      <div style="margin-top:8px">
+        <a id="profileLink" href="#" target="_blank" style="color:var(--accent)">
+          Open GitHub Profile
+        </a>
+      </div>
     </div>
   </header>
 
   <div class="wrap">
     <div class="grid">
       <div class="card">
-        <h3>Recent Repos</h3>
+        <h3>Recent Repositories</h3>
         <ul id="repos" class="repo"></ul>
       </div>
 
@@ -65,60 +74,90 @@
       </div>
 
       <div class="card">
-        <h3>Commits Activity (last 90 days)</h3>
+        <h3>Recent Activity (last 90 days)</h3>
         <canvas id="commitsChart"></canvas>
       </div>
     </div>
   </div>
 
   <footer>
-    Live dashboard • Data from <strong>local stats.json</strong> • Built for <strong>proAhmedUcv</strong>
+    Live dashboard • Public data from GitHub API • Built for <strong>proAhmedUcv</strong>
   </footer>
 
 <script>
-async function main() {
-  try {
-    // ✅ نقرأ البيانات من ملف stats.json الذي تم توليده مسبقاً بواسطة الأكشن
-    const res = await fetch('./assets/stats.json');
-    const data = await res.json();
+const USER = 'proAhmedUcv';
+const API = 'https://api.github.com';
 
-    // --- بيانات المستخدم ---
-    document.getElementById('avatar').src = data.avatar;
-    document.getElementById('name').innerText = data.name;
-    document.getElementById('bio').innerText = data.bio || '';
-    document.getElementById('profileLink').href = data.html_url;
+async function jfetch(u){
+  const r = await fetch(u);
+  if(!r.ok) throw r;
+  return r.json();
+}
 
-    // --- المستودعات الأخيرة ---
+async function main(){
+  try{
+    // بيانات الحساب
+    const user = await jfetch(`${API}/users/${USER}`);
+    document.getElementById('avatar').src = user.avatar_url;
+    document.getElementById('name').innerText = user.name || USER;
+    document.getElementById('bio').innerText = user.bio || '';
+    document.getElementById('profileLink').href = user.html_url;
+
+    // المستودعات الأخيرة
+    const repos = await jfetch(`${API}/users/${USER}/repos?per_page=100&sort=pushed`);
+    const recent = repos.slice(0, 8);
     const ul = document.getElementById('repos');
-    data.repos.slice(0, 8).forEach(r => {
+    recent.forEach(r => {
       const li = document.createElement('li');
-      li.innerHTML = `<a href="${r.url}" target="_blank">${r.name}</a> — ★ ${r.stars} • forks: ${r.forks}`;
+      li.innerHTML = `<a href="${r.html_url}" target="_blank">${r.name}</a>
+        — ★ ${r.stargazers_count} • forks: ${r.forks_count}`;
       ul.appendChild(li);
     });
 
-    // --- لغات البرمجة ---
-    const langTotals = data.languages;
+    // تحليل اللغات (بدون تجاوز الـ rate-limit)
+    const langTotals = {};
+    for(const r of repos.slice(0,10)){ // ← نخفض العدد لتقليل الطلبات
+      try{
+        const langs = await jfetch(r.languages_url);
+        for(const [k,v] of Object.entries(langs))
+          langTotals[k] = (langTotals[k]||0) + v;
+      }catch(e){ /* تجاهل الأخطاء البسيطة */ }
+    }
     const Lkeys = Object.keys(langTotals);
     const Lvals = Object.values(langTotals);
-    new Chart(document.getElementById('langChart'), {
-      type: 'doughnut',
-      data: { labels: Lkeys, datasets: [{ data: Lvals }] },
-      options: { plugins: { legend: { position: 'bottom' } } }
-    });
+    if(Lkeys.length){
+      new Chart(document.getElementById('langChart'), {
+        type:'doughnut',
+        data:{ labels:Lkeys, datasets:[{ data:Lvals }] },
+        options:{ plugins:{ legend:{ position:'bottom' } } }
+      });
+    }
 
-    // --- النشاط (commits/events) ---
-    const commits = data.commits || {};
-    const labels = Object.keys(commits);
-    const values = Object.values(commits);
+    // النشاط (أحداث المستخدم)
+    const events = await jfetch(`${API}/users/${USER}/events?per_page=100`);
+    const days = 90;
+    const counts = {};
+    for(let i=0;i<days;i++){
+      const d = new Date(); d.setDate(d.getDate()-i);
+      counts[d.toISOString().slice(0,10)] = 0;
+    }
+    events.forEach(ev=>{
+      const k = ev.created_at && ev.created_at.slice(0,10);
+      if(k in counts && (ev.type==='PushEvent' || ev.type==='CommitCommentEvent'))
+        counts[k]++;
+    });
+    const labels = Object.keys(counts).reverse();
+    const data = Object.values(counts).reverse();
     new Chart(document.getElementById('commitsChart'), {
-      type: 'bar',
-      data: { labels, datasets: [{ label: 'Events', data: values, barThickness: 8 }] },
-      options: { scales: { x: { ticks: { maxRotation: 90 } } } }
+      type:'bar',
+      data:{ labels, datasets:[{ label:'Activity', data, barThickness:8 }] },
+      options:{ scales:{ x:{ ticks:{ maxRotation:90 } } } }
     });
 
-  } catch (err) {
+  }catch(err){
     console.error(err);
-    document.body.innerHTML = '<pre style="color:#f88">Error loading local stats.json file.</pre>';
+    document.body.innerHTML =
+      '<pre style="color:#f88;padding:20px;text-align:center;">⚠️ Error loading dashboard.<br>Possibly rate-limited by GitHub API.<br>Try again later.</pre>';
   }
 }
 
