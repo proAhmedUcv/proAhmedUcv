@@ -88,11 +88,15 @@
 const USER = 'proAhmedUcv';
 const API = 'https://api.github.com';
 
+const TOKEN = 'MY_GH_PAT'; // ضع PAT هنا
 async function jfetch(u){
-  const r = await fetch(u);
+  const r = await fetch(u, {
+    headers: { Authorization: `token ${TOKEN}` }
+  });
   if(!r.ok) throw r;
   return r.json();
 }
+
 
 async function main(){
   try{
@@ -165,3 +169,4 @@ main();
 </script>
 </body>
 </html>
+
