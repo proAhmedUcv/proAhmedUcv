@@ -5,7 +5,7 @@
 <div align="center">
 
 <!-- Banner: replace path if you want a custom banner in /assets/ -->
-<img src="https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/my_profile_banner.png" alt="banner" style="width:100%; max-height:240px; object-fit:cover; border-radius:12px;"/>
+<img src="https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/my_profile_banner.png" alt="banner" style="width:50%; max-height:120px; object-fit:cover; border-radius:12px;"/>
 
 <br>
 
@@ -96,17 +96,8 @@ Use the dashboard to embed a **screenshot** or **link** from README so visitors 
 
 ---
 
-## 🧩 Fun & Human
-
-- ☕ Love Yemeni coffee — more focused after the second cup.  
-- 🤝 Mentor at ERPNext community — I enjoy helping others ship features.  
-- 🧠 Believer in continual learning and pragmatic architecture.
-
----
-
-## 🚀 Want this repository to automatically refresh badges & assets daily?
-
-I included an **optional** GitHub Action + small Python script (below) you can add into `.github/workflows/` and `/scripts/` to automatically fetch stats and regenerate an SVG/banner — fully optional and easy to enable.
+ 
+> 🔄 Stats update automatically — always showing my latest GitHub activity.
 
 ---
 
