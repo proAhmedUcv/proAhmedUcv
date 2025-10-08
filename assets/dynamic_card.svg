@@ -1,0 +1,16 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="120">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#36BCF7"/>
+      <stop offset="1" stop-color="#7F5AF0"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="12" fill="#071029"/>
+  <text x="140" y="38" fill="#E6EEF8" font-size="20" font-family="Verdana">Ahmed AL-Yousofi</text>
+  <text x="140" y="66" fill="#9fb2d6" font-size="14" font-family="Verdana">
+    Repos: 95 • Followers: 14 • Following: 27
+  </text>
+  <image x="14" y="14" width="92" height="92" href="https://avatars.githubusercontent.com/u/116961592?v=4"/>
+  <rect x="0" y="118" width="100%" height="2" fill="url(#g)"/>
+</svg>
