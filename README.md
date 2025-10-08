@@ -6,11 +6,10 @@
         <p>To Develop a new version of the world</p>
     </p>
       
-[![linkedin](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/linkedin-32.png)](https://www.linkedin.com/in/proAhmedUcv)		
-[![twitter](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/twitter-32.png)](https://twitter.com/MohamedAlqadasi?t=b0PhbTbVmK_Gqm0IPdI51w&s=09)
-[![facebook](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/facebook-32.png)](https://www.facebook.com/profile.php?id=100006434417374)
-[![whatsapp](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/whatsapp-32.png)](https://wa.me/c/967776108988)
-[![service](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/briefcase-32.png)](https://discuss.erpnext.com/u/mohamedabdulsalam/summary)
+[![linkedin](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/linkedin-32.png)](https://www.linkedin.com/in/ahmed-mohammed-al-yousofi-754a2923b/)		
+[![twitter](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/twitter-32.png)](https://x.com/ahmd_alywsfy?t=loKo-gyyhIEtzrXN3EcfgA&s=09)
+ [![whatsapp](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/whatsapp-32.png)](https://wa.me/c/967776108988)
+[![service](https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/briefcase-32.png)](https://discuss.erpnext.com/u/AhmedUCV/summary)
 
 <!-- [https://discuss.erpnext.com](https://discuss.erpnext.com/u/mohamedabdulsalam/summary) -->
 ![](https://komarev.com/ghpvc/?username=proAhmedUcv)
@@ -18,13 +17,31 @@
 <!--End Header and Icons  -->
   <hr>
   
-**About.. 👋**
-
-
-
-[![واتساب](https://img.shields.io/badge/WhatsApp-%231DAF0E?style=for-the-badge&logo=Whatsapp&logoColor=white)](https://wa.me/+967776108988)
  
 
+👨‍💻 About Me
+
+  
+I specialize in building and customizing enterprise solutions using ERPNext and the Frappe Framework, delivering seamless systems that drive digital transformation for businesses. As an Information Systems graduate from Sana'a University, College of Computer and Information Technology, I bring a strong academic foundation combined with practical experience in creating scalable and effective solutions to complex organizational challenges.
+
+⚡ What I Offer:
+
+Extensive experience in developing and tailoring ERPNext systems to align with diverse business requirements, from analysis to deployment and ongoing support.
+Advanced skills in crafting applications with the Frappe Framework, emphasizing performance, user experience, and maintainability.
+Expertise in designing integrated solutions that streamline organizational processes, reduce complexity, and boost operational efficiency.
+A passion for writing clean, well-structured, and future-proof code that adheres to industry best practices.
+
+  
+ 
+🌟 Why Choose Me?
+
+
+I believe in the power of precision and a customer-centric approach. My dedication lies in delivering innovative, flexible solutions that not only meet but exceed expectations. My academic and professional background equips me with a deep understanding of enterprise challenges and the ability to translate them into transformative opportunities through technology.
+
+
+
+  
+ <hr>
 
  
 
