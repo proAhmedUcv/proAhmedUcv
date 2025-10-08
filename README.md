@@ -98,6 +98,7 @@ Use the dashboard to embed a **screenshot** or **link** from README so visitors 
 
  
 > 🔄 Stats update automatically — always showing my latest GitHub activity.
+![dynamic card](./assets/dynamic_card.svg)
 
 ---
 
