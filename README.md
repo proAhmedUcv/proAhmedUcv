@@ -60,8 +60,7 @@
 
 </div>
 
-> Tip: These cards are live — they update based on your GitHub activity.
-
+ 
 ---
 
 ## 🛠️ Skills & Tech (visual)
@@ -91,8 +90,6 @@
 > Explore my live GitHub Dashboard — visual charts of commits, languages, and repositories.
 
 **Live Demo:** [View Dashboard](https://proahmeducv.github.io/proAhmedUcv/)
-
-Use the dashboard to embed a **screenshot** or **link** from README so visitors can open the full interactive view.
 
 ---
 
