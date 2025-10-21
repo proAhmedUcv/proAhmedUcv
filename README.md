@@ -92,7 +92,20 @@
 **Live Demo:** [View Dashboard](https://proahmeducv.github.io/proAhmedUcv/)
 
 ---
+---
 
+## 🌐 My Portfolio
+
+🎨 **Explore My Live Portfolio Website**  
+A curated collection of my best work — ERPNext systems, Frappe apps, mobile and web solutions — presented in a clean, interactive format.
+
+👉 **Visit Here:** [**My Portfolio Website** 🌍](https://proahmeducv.github.io/my_portfolio/index.html)
+
+> Designed and developed entirely by me using HTML, CSS, JS, and Bootstrap — reflecting both my technical and design capabilities.
+
+---
+
+ 
  
 > 🔄 Stats update automatically — always showing my latest GitHub activity.
 ![dynamic card](./assets/dynamic_card.svg)
