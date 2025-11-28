@@ -8,8 +8,7 @@
 <img src="https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/my_profile_banner.png?raw=true" alt="banner" style="width:50%; max-height:120px; object-fit:cover; border-radius:12px;"/>
 
 <br>
-
-<img src="https://github.com/proAhmedUcv/proAhmedUcv/blob/master/proAhmedUcv/public/images/my%20profile.jpg?raw=true" width="160" style="border-radius:50%; margin-top:-80px; box-shadow:0 10px 30px rgba(0,0,0,0.6);" alt="Ahmed AL-Yousofi"/>
+ 
 
 # 👋 Hi — I'm **Ahmed AL-Yousofi**
 ### ERP Consultant · Systems Architect · Project Manager · Frappe / ERPNext Developer
